@@ -19,7 +19,7 @@
 					<form class="form-label-left input_mask" action="{{ route('penyetokan_store') }}" method="post">
 						{{ csrf_field() }}
                         
-                        <div class="form-group row">
+                        {{-- <div class="form-group row">
                             <label class="col-form-label col-md-3 col-sm-3">Nama Produk</label>
                                 <div class="col-md-9 col-sm-9">
                                     <select name="nm_produk" class="select2_single form-control">
@@ -28,7 +28,19 @@
                                         @endforeach
                                     </select>
                                 </div>
-						</div>
+						</div> --}}
+
+						<div class="form-group row">
+								<label class="col-form-label col-md-3 col-sm-3">Nama Produk</label>
+									<div class="col-md-9 col-sm-9">
+										<select name="nm_produk" class="select2_single form-control">
+											@foreach($produk as $p)
+										<option value="{{ $p->id }} "> {{ $p->nm_produk}} ({{ $p->stock }})</option>
+											@endforeach
+										</select>
+									</div>
+							</div>
+						
 
 						<div class="form-group row">
 							<label class="col-form-label col-md-3 col-sm-3 ">Penyetokan</label>

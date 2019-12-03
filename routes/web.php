@@ -91,6 +91,11 @@ Route::group(['namespace' => 'Admin'], function () {
             Route::get('/delete', 'PenyetokanController@delete')->name('penyetokan_delete');
         });
 
+        // proses
+        Route::group(['prefix' => 'proses'], function(){
+            Route::get('/', 'ProsesController@index')->name('Proses');
+        });
+
     });
 });
 

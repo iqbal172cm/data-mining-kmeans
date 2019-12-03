@@ -34,7 +34,7 @@
 						@foreach($penjualan as $p)
 							<tr>
 								<th>{{ $no++ }}</th>
-								<td>{{ $p->nm_produk }}</td>
+								<td>{{ $p->produk->nm_produk }}</td>
 								<td>{{ $p->olahan }}</td>
 								<td>{{ $p->penjualan }}</td>
 								<td>{{ $p->tgl_jual }}</td>
@@ -58,6 +58,10 @@
 							@endforeach
 						</tbody>
 					</table>
+					<br>
+
+					{{ $penjualan->links() }}
+
 				</div>
 			</div>
 		</div>

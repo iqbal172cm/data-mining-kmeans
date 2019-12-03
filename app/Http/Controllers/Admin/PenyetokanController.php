@@ -16,14 +16,17 @@ class PenyetokanController extends Controller
 
     public function index ()
     {
-        $data['penyetokan'] = penyetokan::paginate(10);
+        $data['penyetokan'] = Penyetokan::with('produk')->paginate(10);
 
         return view('admin.penyetokan.index', $data);
+        // return response()->json($data, 200);
+
     }
 
     public function create()
     {
-        $data['produk'] = produk::all();
+        $data['produk'] = Produk::all();
+
 
         return view('admin.penyetokan.create', $data);
     }
@@ -34,7 +37,7 @@ class PenyetokanController extends Controller
 
         $penyetokan = new penyetokan;
         $penyetokan->uuid = Uuid::uuid4();
-        $penyetokan->nm_produk = $produk->nm_produk;
+        $penyetokan->nm_produk = $r->nm_produk;
         $penyetokan->penyetokan = $r->penyetokan;
         $penyetokan->tgl_stok = $r->tgl_stok; 
         $penyetokan->save();

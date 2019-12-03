@@ -33,7 +33,7 @@
 						@foreach($penyetokan as $p)
 							<tr>
 								<th>{{ $no++ }}</th>
-								<td>{{ $p->nm_produk }}</td>
+								<td>{{ $p->produk->nm_produk }}</td>
 								<td>{{ $p->penyetokan }}</td>
 								<td>{{ $p->tgl_stok }}</td>
 								<td>
@@ -56,6 +56,10 @@
 							@endforeach
 						</tbody>
 					</table>
+					<br>
+
+					{{ $penyetokan->links() }}
+					
 				</div>
 			</div>
 		</div>

@@ -19,9 +19,10 @@ class PenjualanController extends Controller
     
     public function index()
     {
-        $data['penjualan'] = penjualan::paginate(10);
+        $data['penjualan'] = Penjualan::with('produk')->paginate(10);
 
         return view('admin.penjualan.index', $data);
+        // return response()->json($data, 200);
     }
 
     public function create()
@@ -38,7 +39,7 @@ class PenjualanController extends Controller
 
         $penjualan = new penjualan;
         $penjualan->uuid = Uuid::uuid4();
-        $penjualan->nm_produk = $produk->nm_produk;
+        $penjualan->nm_produk = $r->nm_produk;
         $penjualan->olahan = $r->olahan;
         $penjualan->penjualan = $r->penjualan;
         $penjualan->tgl_jual = $r->tgl_penjualan; 
