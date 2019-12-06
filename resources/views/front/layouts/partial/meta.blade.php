@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="{{ asset('assets/front/images/logo.png')  }}" />
 	<title>K Means &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />

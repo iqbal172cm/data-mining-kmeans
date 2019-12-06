@@ -19,7 +19,7 @@ class PenjualanController extends Controller
     
     public function index()
     {
-        $data['penjualan'] = Penjualan::with('produk')->paginate(10);
+        $data['penjualan'] = Penjualan::orderBy('created_at', 'DESC')->with('produk')->paginate(10);
 
         return view('admin.penjualan.index', $data);
         // return response()->json($data, 200);

@@ -3,85 +3,25 @@
 @section('title', 'Home')
 
 @section('contents')
-        <div id="fh5co-services" class="fh5co-bg-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                            <span class="icon">
-                                <i class="icon-eye"></i>
-                            </span>
-                            <h3>Retina Ready</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                            <span class="icon">
-                                <i class="icon-command"></i>
-                            </span>
-                            <h3>Fully Responsive</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                            <span class="icon">
-                                <i class="icon-mouse"></i>
-                            </span>
-                            <h3>Web Starter</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div id="fh5co-project">
             <div class="container">
                 <div class="row animate-box">
                     <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                        <h2>Our Project</h2>
+                        <h2>Our Product</h2>
                         <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
                     </div>
                 </div>
                 <div class="row">
+                       @foreach($produk as $p)
                     <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-                            <h3>Sea</h3>
-                            <span>Web Design</span>
+                        <a href="#"><img  width="" src="{{ asset('uploads/'.$p->gambar) }}" alt="{{ $p->nm_produk}}" class="img-responsive">
+                            <h3>{{ $p->nm_produk}}</h3>
+                            <span>{{ $p->stock}} KG</span>
                         </a>
                     </div>
-                    <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-2.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-                            <h3>Nature</h3>
-                            <span>Application</span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-3.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-                            <h3>Green Island</h3>
-                            <span>Branding</span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-4.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-                            <h3>Workspace</h3>
-                            <span>Web Design</span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-5.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-                            <h3>Nature</h3>
-                            <span>Application</span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-6.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-                            <h3>Green Island</h3>
-                            <span>Branding</span>
-                        </a>
-                    </div>
+                    @endforeach
+                    
 
                 </div>
             </div>

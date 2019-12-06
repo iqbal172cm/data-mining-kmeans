@@ -16,7 +16,7 @@ class PenyetokanController extends Controller
 
     public function index ()
     {
-        $data['penyetokan'] = Penyetokan::with('produk')->paginate(10);
+        $data['penyetokan'] = Penyetokan::orderBy('created_at', 'DESC')->with('produk')->paginate(10);
 
         return view('admin.penyetokan.index', $data);
         // return response()->json($data, 200);

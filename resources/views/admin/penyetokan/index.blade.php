@@ -34,7 +34,7 @@
 							<tr>
 								<th>{{ $no++ }}</th>
 								<td>{{ $p->produk->nm_produk }}</td>
-								<td>{{ $p->penyetokan }}</td>
+								<td>{{ $p->penyetokan }} Ton</td>
 								<td>{{ $p->tgl_stok }}</td>
 								<td>
 									<div class="btn-group">

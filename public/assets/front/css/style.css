@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li a {
   font-size: 18px;
   padding: 30px 15px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(8, 8, 8, 0.8);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -244,8 +244,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-header a {
-  color: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 #fh5co-header a:hover {
   color: white;
@@ -268,13 +268,13 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 62, 28, 0.5);
+  /* background: rgba(255, 62, 28, 0.5);
   background: -moz-linear-gradient(left, rgba(255, 62, 28, 0.5) 0%, rgba(255, 62, 28, 0.63) 26%, darkorange 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 62, 28, 0.5)), color-stop(26%, rgba(255, 62, 28, 0.63)), color-stop(100%, darkorange));
   background: -webkit-linear-gradient(left, rgba(255, 62, 28, 0.5) 0%, rgba(255, 62, 28, 0.63) 26%, darkorange 100%);
   background: -o-linear-gradient(left, rgba(255, 62, 28, 0.5) 0%, rgba(255, 62, 28, 0.63) 26%, darkorange 100%);
-  background: -ms-linear-gradient(left, rgba(255, 62, 28, 0.5) 0%, rgba(255, 62, 28, 0.63) 26%, darkorange 100%);
-  background: linear-gradient(to right, rgba(255, 62, 28, 0.5) 0%, rgba(255, 62, 28, 0.63) 26%, darkorange 100%);
+  background: -ms-linear-gradient(left, rgba(240, 235, 234, 0.5) 0%, rgba(245, 240, 240, 0.63) 26%, darkorange 100%);
+  background: linear-gradient(to right, rgba(255, 62, 28, 0.5) 0%, rgba(255, 62, 28, 0.63) 26%, rgb(246, 243, 238) 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3e1c', endColorstr='#ff8c00', GradientType=1 );
 }
 .fh5co-cover > .fh5co-container {
@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover .display-tc h2 {
   margin: 0;
   padding: 0;
-  color: white;
+  color: black;
 }
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,

@@ -22,11 +22,19 @@
                   </li>
 
                   <li {{ Request::is('admin/produk*') ? 'class=active' : '' }}>
-                    <a href="{{ route('produk') }}"><i class="fa fa-university"></i> Data Produk Olahan <span class="fa fa-chevron"></span></a>
+                    <a href="{{ route('produk') }}"><i class="fa fa-archive"></i> Data Produk Olahan <span class="fa fa-chevron"></span></a>
                   </li>
 
                   <li {{ Request::is('admin/penjualan*') ? 'class=active' : '' }}>
-                    <a href="{{ route('penjualan') }}"><i class="fa fa-university"></i> Data Ppenjualan <span class="fa fa-chevron"></span></a>
+                    <a href="{{ route('penjualan') }}"><i class="fa fa-shopping-basket"></i> Data Penjualan <span class="fa fa-chevron"></span></a>
+                  </li>
+
+                  <li {{ Request::is('admin/penyetokan*') ? 'class=active' : '' }}>
+                    <a href="{{ route('penyetokan') }}"><i class="fa fa-cart-plus"></i> Data Penyetokan <span class="fa fa-chevron"></span></a>
+                  </li>
+
+                  <li {{ Request::is('admin/proses*') ? 'class=active' : '' }}>
+                    <a href="{{ route('proses') }}"><i class="fa fa-spinner"></i> K-means <span class="fa fa-chevron"></span></a>
                   </li>
                   {{-- <li>
                     <a href="{{ route('home') }}"><i class="fa fa-home"></i> Home <span class="fa fa-chevron"></span></a>

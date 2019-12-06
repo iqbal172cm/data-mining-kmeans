@@ -104,7 +104,7 @@ Route::group(['namespace' => 'Admin'], function () {
 
         // proses
         Route::group(['prefix' => 'proses'], function(){
-            Route::get('/', 'ProsesController@index')->name('Proses');
+            Route::get('/', 'ProsesController@index')->name('proses');
         });
 
     });
