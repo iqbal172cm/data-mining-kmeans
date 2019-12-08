@@ -23,8 +23,9 @@
                             <label class="col-form-label col-md-3 col-sm-3">Nama Produk</label>
                                 <div class="col-md-9 col-sm-9">
                                     <select name="nm_produk" class="select2_single form-control">
+										<option value=""></option>
                                         @foreach($produk as $p)
-									<option value="{{ $p->id }} "> {{ $p->nm_produk}} ({{ $p->stock }})</option>
+											<option value="{{ $p->id }} "> {{ $p->nm_produk}} ({{ $p->stock }})</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -33,9 +34,10 @@
                         <div class="form-group row">
                             <label class="col-form-label col-md-3 col-sm-3">Pengolahan</label>
                                 <div class="col-md-9 col-sm-9">
-                                    <select name="olahan" class="select2_single form-control">
+                                    <select name="olahan" class="select2_single form-control" tabindex="-1">
+										<option value=""></option>
                                         @foreach($olahan as $p)
-                                            <option value="{{ $p->olahan }} "> {{ $p->olahan}} </option>
+                                            <option value="{{ $p->olahan }} "> {{ $p->olahan }} </option>
                                         @endforeach
                                     </select>
                                 </div>

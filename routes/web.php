@@ -24,6 +24,7 @@ Auth::routes();
             //Home Page
             Route::group(['prefix' => '/'], function(){
                 Route::get('/', 'HomeController@index')->name('home');
+                Route::get('/home', 'HomeController@index')->name('home');
                
             });
         });

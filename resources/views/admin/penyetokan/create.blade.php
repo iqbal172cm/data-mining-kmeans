@@ -34,8 +34,9 @@
 								<label class="col-form-label col-md-3 col-sm-3">Nama Produk</label>
 									<div class="col-md-9 col-sm-9">
 										<select name="nm_produk" class="select2_single form-control">
+											<option value=""></option>
 											@foreach($produk as $p)
-										<option value="{{ $p->id }} "> {{ $p->nm_produk}} ({{ $p->stock }})</option>
+												<option value="{{ $p->id }} "> {{ $p->nm_produk}} ({{ $p->stock }})</option>
 											@endforeach
 										</select>
 									</div>

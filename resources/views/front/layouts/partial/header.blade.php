@@ -5,16 +5,7 @@
 				<div class="left-menu text-right menu-1">
 					<ul>
 						<li><a href="{{ route('home') }}">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li class="has-dropdown">
-							<a href="services.html">Services</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
+						<li><a href="about.html">Visi & Misi</a></li>
 					</ul>
 				</div>
 				<div class="logo text-center">
@@ -27,7 +18,7 @@
 				<div class="right-menu text-left menu-1">
 					<ul>
 						<li><a href="blog.html">Blog</a></li>
-						<li class="has-dropdown">
+						{{-- <li class="has-dropdown">
 							<a href="#">Tools</a>
 							<ul class="dropdown">
 								<li><a href="#">HTML5</a></li>
@@ -35,7 +26,7 @@
 								<li><a href="#">Sass</a></li>
 								<li><a href="#">jQuery</a></li>
 							</ul>
-						</li>
+						</li> --}}
 						<li><a href="contact.html">Contact</a></li>
 						<!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li> -->
 					</ul>
@@ -54,8 +45,9 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Makan Ikan Yang Banyak</h1>
 							<h2 ><a href="http://perinus.co.id/" >PT. Perikanan Nusantara (persero)</a></h2>
-							<button type="submit" class="btn btn-default">Join Now</button>
-
+							<form action="http://perinus.co.id/">
+								<button class="btn btn-default">Clik Me</button>
+							</form>
 							{{-- <div class="row">
 								<form class="form-inline" id="fh5co-header-subscribe">
 									<div class="col-md-6 col-md-offset-3">

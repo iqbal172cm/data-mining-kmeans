@@ -42,14 +42,14 @@
 						<div class="form-group row">
 							<label class="col-form-label col-md-3 col-sm-3 ">Nama Pegawai</label>
 							<div class="col-md-9 col-sm-9 ">
-								<input type="text" name="name" class="form-control" placeholder="Nama Pegawai">
+								<input type="text" name="name" class="form-control" @error('name') is-valid @enderror" value="{{ old('name') }}" required autocomplete="name" placeholder="Nama Pegawai">
 							</div>
 						</div>
 
 						<div class="form-group row">
 							<label class="col-form-label col-md-3 col-sm-3">Jabatan</label>
 								<div class="col-md-9 col-sm-9">
-									<select name="role" class="select2_single form-control" tabindex="-1">
+									<select name="role" class="select2_single form-control" tabindex="-1" @error('role') is-valid @enderror" value="{{ old('role') }}" required autocomplete="role">
 										<option value=""></option>
 										<option value="admin">Admin</option>
 										<option value="staf">Staf</option>
@@ -61,7 +61,7 @@
 						<div class="form-group row">
 							<label class="col-form-label col-md-3 col-sm-3 ">No Telpon</label>
 							<div class="col-md-9 col-sm-9 ">
-								<input type="number" name="phone" class="form-control" placeholder="Telpon">
+								<input type="number" name="phone" class="form-control" @error('phone') is-valid @enderror" value="{{ old('phone') }}" required autocomplete="phone" placeholder="Telpon">
 							</div>
 						</div>
 
@@ -96,7 +96,7 @@
                             <label for="password-confirm" class="col-form-label col-md-3 col-sm-3">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-9 col-sm-9">
-								<input id="password-confirm" type="password" class="form-control" name="password_confirmation"  placeholder="Confirm password">
+								<input id="password-confirm" type="password" class="form-control" name="password_confirmation" @error('password_confirmation') is-invalid @enderror" name="password_confirmation" required autocomplete="confirmation-password"  placeholder="Confirm password">
 								
 								@error('password')
                                     <span class="invalid-feedback" role="alert">
