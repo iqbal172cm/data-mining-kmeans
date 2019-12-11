@@ -1,6 +1,6 @@
 @extends('front.layouts.main')
 
-@section('title', 'Home')
+@section('title', 'Perinus Makassar')
 
 @section('contents')
 

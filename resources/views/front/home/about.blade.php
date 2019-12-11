@@ -1,6 +1,6 @@
 @extends('front.layouts.main')
 
-@section('title', 'About')
+@section('title', 'Perinus Makassar')
 
 @section('contents')
 <div id="fh5co-about">
