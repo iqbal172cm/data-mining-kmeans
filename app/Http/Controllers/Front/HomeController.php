@@ -13,4 +13,19 @@ class HomeController extends Controller
         
         return view('front.home.index', $data);
     }
+
+    public function about()
+    {
+        return view('front.home.about');
+    }
+
+    public function visimisi()
+    {
+        return view('front.home.visimisi');
+    }
+
+    public function contact()
+    {
+        return view('front.home.contact');
+    }
 }

@@ -5,7 +5,7 @@
 				<div class="left-menu text-right menu-1">
 					<ul>
 						<li><a href="{{ route('home') }}">Home</a></li>
-						<li><a href="about.html">Visi & Misi</a></li>
+						<li><a href="{{ route('visimisi') }}">Visi & Misi</a></li>
 					</ul>
 				</div>
 				<div class="logo text-center">
@@ -17,7 +17,7 @@
 				</div>
 				<div class="right-menu text-left menu-1">
 					<ul>
-						<li><a href="blog.html">Blog</a></li>
+						<li><a href="{{ route('about') }}">Profil</a></li>
 						{{-- <li class="has-dropdown">
 							<a href="#">Tools</a>
 							<ul class="dropdown">
@@ -27,7 +27,7 @@
 								<li><a href="#">jQuery</a></li>
 							</ul>
 						</li> --}}
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="{{ route('contact') }}">Contact</a></li>
 						<!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li> -->
 					</ul>
 				</div>

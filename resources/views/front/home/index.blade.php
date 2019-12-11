@@ -9,7 +9,7 @@
                 <div class="row animate-box">
                     <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                         <h2>Our Product</h2>
-                        <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                        {{-- <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p> --}}
                     </div>
                 </div>
                 <div class="row">
@@ -27,11 +27,7 @@
             </div>
         </div>
         
-        
+                 
 
-
-        
-    
-
-    
+   
 @endsection

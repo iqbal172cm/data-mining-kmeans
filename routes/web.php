@@ -25,6 +25,10 @@ Auth::routes();
             Route::group(['prefix' => '/'], function(){
                 Route::get('/', 'HomeController@index')->name('home');
                 Route::get('/home', 'HomeController@index')->name('home');
+                Route::get('/about', 'HomeController@about')->name('about');
+                Route::get('/visimisi', 'HomeController@visimisi')->name('visimisi');
+                Route::get('/contact', 'HomeController@contact')->name('contact');
+                // Route::get('/detail/{id?}', 'HomeController@detail')->name('detail');
                
             });
         });
@@ -106,6 +110,11 @@ Route::group(['namespace' => 'Admin'], function () {
         // proses
         Route::group(['prefix' => 'proses'], function(){
             Route::get('/', 'ProsesController@index')->name('proses');
+        });
+
+        // kmeans
+        Route::group(['prefix' => 'kmeans'], function(){
+            Route::get('/', 'KmeansController@index')->name('kmeans');
         });
 
     });

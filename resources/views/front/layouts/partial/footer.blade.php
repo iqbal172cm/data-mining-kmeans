@@ -3,21 +3,10 @@
         <div class="row row-pb-md">
             <div class="col-md-2 col-sm-4 col-xs-6">
                 <ul class="fh5co-footer-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Meetups</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-2 col-sm-4 col-xs-6">
-                <ul class="fh5co-footer-links">
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Handbook</a></li>
-                    <li><a href="#">Held Desk</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('visimisi') }}">Visi & Misi</a></li>
+                    <li><a href="{{ route('about') }}">Profil</a></li>
+                    <li><a href="{{ route('contact')}}">Contact</a></li>
                 </ul>
             </div>
 

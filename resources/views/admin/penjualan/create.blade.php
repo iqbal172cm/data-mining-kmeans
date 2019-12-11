@@ -22,7 +22,7 @@
                         <div class="form-group row">
                             <label class="col-form-label col-md-3 col-sm-3">Nama Produk</label>
                                 <div class="col-md-9 col-sm-9">
-                                    <select name="nm_produk" class="select2_single form-control">
+                                    <select name="nm_produk" class="select2_single form-control"  @error('nm_produk') is-valid @enderror" value="{{ old('nm_produk') }}" required autocomplete="nm_produk" >
 										<option value=""></option>
                                         @foreach($produk as $p)
 											<option value="{{ $p->id }} "> {{ $p->nm_produk}} ({{ $p->stock }})</option>
@@ -46,18 +46,16 @@
 						<div class="form-group row">
 							<label class="col-form-label col-md-3 col-sm-3 ">Pembelian</label>
 							<div class="col-md-9 col-sm-9 ">
-								<input type="number" name="penjualan" class="form-control" placeholder="Banyak Produk">
+								<input type="number" name="penjualan" class="form-control"  @error('penjualan') is-valid @enderror" value="{{ old('penjualan') }}" required autocomplete="penjualan" placeholder="Banyak Produk">
 							</div>
 						</div>
 
 						<div class="form-group row">
 							<label class="col-form-label col-md-3 col-sm-3">Tanggal Penjualan</label>
 							<div class="col-md-9 col-sm-9 ">
-								<input type="date" name="tgl_penjualan" class="form-control placeholder="Tanggal Penjualan">
+								<input type="date" name="tgl_penjualan" class="form-control"  @error('tgl_penjualan') is-valid @enderror" value="{{ old('tgl_penjualan') }}" required autocomplete="tgl_penjualan" placeholder="Tanggal Penjualan">
 							</div>
 						</div>
-				
-						
 						<div class="ln_solid"></div>
 						<div class="form-group row">
 							<div class="col-md-9 col-sm-9  offset-md-3">
