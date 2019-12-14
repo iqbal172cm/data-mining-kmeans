@@ -37,8 +37,9 @@ class KmeansController extends Controller
 
         $data['data_awal']     = $data_awal;
         $data['centroid_awal'] = $centroid_awal;
-        $data['iterasi']       = $this->RumusPersamaanED($data_awal, $centroid_awal);
-        return response()->json($data, 200);
+        $data['literasi']       = $this->RumusPersamaanED($data_awal, $centroid_awal);
+        // return response()->json($data, 200);
+        return view('admin.kmeans.proses', $data);
     }
 
     protected function countYear($tahun, $idProduk)
