@@ -43,7 +43,7 @@
 				<div class="col-md-10 col-md-offset-1 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Makan Ikan Yang Banyak</h1>
+							<h1>Ikan Berkualitas Indonesia</h1>
 							<h2 ><a href="http://perinus.co.id/" >PT. Perikanan Nusantara (persero)</a></h2>
 							<form action="http://perinus.co.id/">
 								<button class="btn btn-default">Clik Me</button>

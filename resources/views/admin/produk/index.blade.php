@@ -22,7 +22,6 @@
                         <tr>
                             <th>no</th>
                             <th>Nama Produk</th>
-                            <th>Pengolahan</th>
                             <th>stok</th>
                             <th>satuan</th>
                             <th>expired</th>
@@ -39,7 +38,7 @@
                             <td>{{ $p->nm_produk }}</td>
                             <td>{{ $p->stock }}</td>
                             <td>{{ $p->satuan}}</td>
-                            <td>{{ $p->expired }}</td>
+                            <td>{{ $p->expired }} Bulan</td>
                             <td><img width="150px" src="{{ asset('uploads/'.$p->gambar) }}"></td>
                             <td>
                                 <div class="btn-group">

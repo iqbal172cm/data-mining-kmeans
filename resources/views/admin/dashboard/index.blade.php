@@ -5,7 +5,7 @@
 @section('contents')
 
  <!-- top tiles -->
- <div class="row tile_count">
+ {{-- <div class="row tile_count">
         <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
           <span class="count_top"><i class="fa fa-user"></i> Total Pegawai</span>
         <div class="count" data-start="0" data-end="" data-postfix="" data-duration="1500" data-delay="0">{{ $pegawai }} Orang</div>
@@ -18,9 +18,41 @@
           <span class="count_top"><i class="fa fa-shopping-basket"></i> Transaksi Penjualan</span>
           <div class="count" data-start="0" data-end="" data-postfix="" data-duration="1500" data-delay="0"><i class=""></i> {{ $penjualan }} Transaksi</div>
         </div>
- </div>
+ </div> --}}
+
+ <div class="row top_tiles">
+    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
+      <div class="tile-stats">
+        <div class="icon"><i class="fa fa-user"></i></div>
+        <div class="count" data-start="0" data-end="" data-postfix="" data-duration="1500" data-delay="0">{{ $pegawai }} Orang</div>
+        <h3>Total Pegawai</h3>
+      </div>
+    </div>
+    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
+      <div class="tile-stats">
+        <div class="icon"><i class="fa fa-archive"></i></div>
+        <div class="count" data-start="0" data-end="" data-postfix="" data-duration="1500" data-delay="0">{{ $produk }} Jenis</div>
+        <h3>Jenis Ikan</h3>
+      </div>
+    </div>
+    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
+      <div class="tile-stats">
+        <div class="icon"><i class="fa fa-shopping-basket"></i></div>
+        <div class="count" data-start="0" data-end="" data-postfix="" data-duration="1500" data-delay="0">{{ $penjualan}}</div>
+        <h3>Penjualan</h3>
+      </div>
+    </div>
+    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
+      <div class="tile-stats">
+        <div class="icon"><i class="fa fa-cart-plus"></i></div>
+        <div class="count" data-start="0" data-end="" data-postfix="" data-duration="1500" data-delay="0">{{ $penyetokan }}</div>
+        <h3>Pembelian</h3>
+      </div>
+    </div>
+  </div>
  
- <div id="grafikjual"> </div>
+ <div id="grafikjual"></div>
+ 
  <!-- /top tiles -->
  {{-- <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">

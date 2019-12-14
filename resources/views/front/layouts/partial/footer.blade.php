@@ -11,15 +11,14 @@
             </div>
 
             <div class="col-md-4 col-sm-12 col-xs-12 fh5co-widget col-md-push-1">
-                    <h3>Contact Info</h3>
-                    <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-                    <p><a href="#">Learn More</a></p>
+                    <h3>Kontak Info</h3>
+                    <p>Jl. Sabutung 1 No.1 PAOTERE, <br> Kec. Ujung Tanah, Kota Makassar</p>
+                    <p><a href="{{ route('contact')}}">Learn More</a></p>
             </div>
 
             <div class="col-md-4 col-sm-12 col-xs-12 fh5co-widget col-md-push-1" >
-                <h3>A Little About Orange</h3>
-                <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-                <p><a href="#">Learn More</a></p>
+                <h3>PT. Perikanan Nusantara</h3>
+                <p>MENJADI PERUSAHANAN PERIKANAN TERBAIK GUNA MEWUJUDKAN KEDAULATAN PANGAN</p>
             </div>
         </div>
 

@@ -51,11 +51,11 @@
                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password"/>
                 </div>
 
-                <div class="checkbox">
+                {{-- <div class="checkbox">
                         <label>
                             <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
                         </label>
-                </div>
+                </div> --}}
 
                 <div>
                     <button type="submit" class="btn btn-submit btn-primary ladda-button btn-block"> {{ __('Login') }}</button>
@@ -76,7 +76,7 @@
                 <div>
                     {{-- <img src="{{ asset('assets/front/images/logo.png')  }}" width="30%" alt=""> --}}
                     <h1><img src="{{ asset('assets/front/images/logo.png')  }}" width="30%" alt=""></h1>
-                    <p>©2019 Muhammad Iqbal. PT. Perikanan Nusantara (PERSERO). Privacy and Terms</p>
+                    <p>&copy 2019 Muhammad Iqbal. PT. Perikanan Nusantara (PERSERO). Privacy and Terms</p>
                 </div>
               </div>
             </form>

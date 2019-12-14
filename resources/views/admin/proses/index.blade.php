@@ -30,9 +30,9 @@
                       @foreach($produk as $p)
                         <tr>
                             <td>{{ $p['nm_produk'] }}</td>
-                            <td>{{ $p['penyetokan']}}</td>
+                            <td>{{ $p['penjualan']}}</td>
                             <td>{{ $p['penjualan'] }}</td>
-                            <td>{{ $p['stock'] }}</td>
+                            <td>{{ $p['penjualan'] }}</td>
                             {{-- <td value="{{ $p->id }} "> {{ $p->stock}}</td> --}}
                         </tr>
                         

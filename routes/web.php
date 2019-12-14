@@ -95,6 +95,7 @@ Route::group(['namespace' => 'Admin'], function () {
             Route::get('/edit/{id?}', 'PenjualanController@edit')->name('penjualan_edit');
             Route::put('/update/{id?}', 'PenjualanController@update')->name('penjualan_update');
             Route::get('/delete', 'PenjualanController@delete')->name('penjualan_delete');
+            Route::get('cetak_pdf', 'PenjualanController@cetak_pdf');
         });
 
         // penyetokan
@@ -114,7 +115,8 @@ Route::group(['namespace' => 'Admin'], function () {
 
         // kmeans
         Route::group(['prefix' => 'kmeans'], function(){
-            Route::get('/', 'KmeansController@index')->name('kmeans');
+            Route::get('/', 'KmeansController@index')->name('kmeans.index');
+            Route::post('/proses', 'KmeansController@kmeans')->name('kmeans.kmeans');
         });
 
     });

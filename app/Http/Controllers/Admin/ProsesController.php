@@ -22,9 +22,9 @@ class ProsesController extends Controller
         foreach ($produk as $p) {
             $pro[] = [
                 'nm_produk' => $p->nm_produk,
-                'stock' => $p->stock,
                 'penjualan' => $this->penjualan($p->id),
-                'penyetokan' => $this->penyetokan($p->id),
+                // $data['penjualan'] = penjualan::orderBy('created_at', 'DESC')->with('penjualan')->paginate(10);
+
             ];
         }
     

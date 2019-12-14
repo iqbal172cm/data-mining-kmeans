@@ -36,7 +36,7 @@
 								<th>{{ $no++ }}</th>
 								<td>{{ $p->produk->nm_produk }}</td>
 								<td>{{ $p->olahan }}</td>
-								<td>{{ $p->penjualan }}</td>
+								<td>{{ $p->penjualan }} KG</td>
 								<td>{{ $p->tgl_jual }}</td>
 								<td>
 									<div class="btn-group">

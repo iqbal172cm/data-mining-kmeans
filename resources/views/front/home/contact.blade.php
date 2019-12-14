@@ -12,8 +12,8 @@
 						<h3>Kontak Informasi</h3>
 						<ul>
 							<li class="address">Jl. Sabutung 1 No.1 PAOTERE, <br> Kec. Ujung Tanah, Kota Makassar</li>
-							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+							<li class="phone"><a href="tel://04113628812">(0411) 3628812</a></li>
+							<li class="email"><a href="mailto:operasional@perinus.co.id">operasional@perinus.co.id</a></li>
 							<li class="url"><a href="http://perinus.co.id">perinus.co.id</a></li>
 						</ul>
 					</div>

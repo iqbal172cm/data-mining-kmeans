@@ -58,7 +58,7 @@ class PenjualanController extends Controller
         $data['produk'] = produk::all();
         $data['olahan'] = olahan::all();
 
-        $data['penjualan'] = penjualan::find($id);
+        // $data['penjualan'] = penjualan::orderBy('created_at', 'DESC')->with('penjualan')->paginate(10);
 
         return view('admin.penjualan.edit', $data);
     }
@@ -80,5 +80,13 @@ class PenjualanController extends Controller
         penjualan::where('uuid', $r->id)->delete();
 
         return redirect()->route('penjualan');
+    }
+
+    public function cetak_pdf()
+    {
+    	$pegawai = Penjualan::all();
+ 
+    	$pdf = PDF::loadview('penjualan_pdf',['penjualan'=>$penjualan]);
+    	return $pdf->download('laporan-penjualan-pdf');
     }
 }

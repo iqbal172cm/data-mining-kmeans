@@ -59,7 +59,9 @@
 						<div class="ln_solid"></div>
 						<div class="form-group row">
 							<div class="col-md-9 col-sm-9  offset-md-3">
-							<a href="{{ route('penjualan') }}"></a><button type="button" class="btn btn-danger">Cancel</button>
+								<a href="{{ route('penjualan')}}">
+									<button href="" type="button" class="btn btn-danger">Cancel</button>
+								</a>
 								<button class="btn btn-primary" type="reset">Reset</button>
 								<button type="submit" class="btn btn-success">Simpan</button>
 							</div>
