@@ -60,7 +60,7 @@
                           <table class="table table-striped">
                             <thead>
                               <tr>
-                                  <th>no</th>
+                                  <th>Centroid</th>
                                   <th>Tahun ke 1</th>
                                   <th>Tahun ke 2</th>
                                   <th>Tahun ke 3</th>
@@ -80,10 +80,13 @@
                             </tbody>
                           @endforeach
                           </table>
+                          
       
                         </div>
                       </div>
                 </div>
+
+                
 
         </div>
 

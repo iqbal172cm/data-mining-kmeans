@@ -38,9 +38,15 @@ class KmeansController extends Controller
         $data['data_awal']     = $data_awal;
         $data['centroid_awal'] = $centroid_awal;
         $data['literasi']       = $this->RumusPersamaanED($data_awal, $centroid_awal);
-        // return response()->json($data, 200);
-        return view('admin.kmeans.proses', $data);
+        // $data['min']            = $this->NilaiTerkecil($literasi);
+        // $data['nilaiterkecil']       = $this->NilaiTerkecil($centroid_awal, $literasi);
+        return response()->json($data, 200);
+        // return view('admin.kmeans.proses', $data);
     }
+
+        // $literasi = $this->literasi($centroid_awal);
+        // $data['centroid_awal'] = $centroid_awal;
+    
 
     protected function countYear($tahun, $idProduk)
     {
@@ -60,7 +66,7 @@ class KmeansController extends Controller
         return $rand;
     }
 
-    public function RumusPersamaanED($data, $centroid)
+    protected function RumusPersamaanED($data, $centroid)
     {
         $hasil = [];
         foreach ($data as $key => $value) {
@@ -73,7 +79,7 @@ class KmeansController extends Controller
 
     }
 
-    protected function NilaiTerkecil(array $cluster, $data)
+    protected function NilaiTerkecil(array $data, $centr)
     {
         // untuk menambah 1
         $no    = 0;
@@ -105,5 +111,47 @@ class KmeansController extends Controller
         return $min;
 
     }
+
+    protected function CentroidBaru(array $centroid_baru)
+    {
+  
+      // mengambilkan nilai atau hasil
+      return $centroid_baru;
+  
+    }
+
+     // untuk menentukan sampai cluster sama lalu berhenti
+    protected function ClusterBaru(array $cluster, $literasi){
+
+    // mengambil centroid lama
+    $centroid_lama = $this->flatten_array($cluster[($literasi-1)]);
+    // mengambil centroid baru
+    $centroid_baru = $this->flatten_array($cluster[$literasi]);
+
+    $jumlah_sama   = 0;
+
+    for($i = 0; $i < count($centroid_lama); $i++){
+
+      if($centroid_lama[$i] === $centroid_baru[$i]){
+
+        $jumlah_sama++;
+
+      }
+
+    }
+
+    // mengambilkan nilai atau hasil
+    return $jumlah_sama === count($centroid_lama) ? false : true;
+
+  }
+
+    // untuk mengambil data yang akan dicocokkan
+    protected function flatten_array($arg) {
+
+    // mengambilkan nilai atau hasil
+    return is_array($arg) ? array_reduce($arg, function ($c, $a) { return array_merge($c, flatten_array($a)); },[]) : [$arg];
+
+
+  }
 
 }

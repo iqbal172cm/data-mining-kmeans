@@ -52,6 +52,16 @@
   </div>
  
  <div id="grafikjual"></div>
+ <select name="" id="select">
+    <option value="Jan">January</option>
+    <option value="Feb">Februajry</option>
+    <option value="Mar">March</option>
+    <option value="Apr">April</option>
+    <option value="May">May</option>
+    <option value="Jun">June</option>
+  </select>
+
+  
  
  <!-- /top tiles -->
  {{-- <div class="row">
@@ -84,6 +94,7 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://rawgit.com/mholt/PapaParse/master/papaparse.js"></script>
      <!-- untuk menampilkan grafik -->
 
 <script>
